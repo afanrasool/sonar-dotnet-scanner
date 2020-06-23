@@ -18,7 +18,7 @@ RUN yum install -y centos-release-scl-rh && \
 WORKDIR /
 
 # Install SonarQube Scanner as the running user
-RUN dotnet tool install --global dotnet-sonarscanner --version 4.5.0
+RUN dotnet tool install --global dotnet-sonarscanner --version 4.9.0
 ENV PATH="${PATH}:$HOME/.dotnet/tools"
 
 RUN chown -R 1029:0 /usr/local/bin && \
